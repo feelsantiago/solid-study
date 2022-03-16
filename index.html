@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <section class="hero is-success is-fullheight">
+            <div class="hero-body is-justify-content-center">
+                <div class="main-content">
+                    <div class="card">
+                        <card class="card-content">
+                            <div class="content main-content">
+                                <div class="has-text-centered">
+                                    <h3 class="is-size-3">Register</h3>
+                                </div>
+                                <form id="register-form">
+                                    <!-- Name -->
+                                    <div id="name" class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="Fulano de tal" />
+                                        </div>
+                                    </div>
+
+                                    <!-- User Name -->
+                                    <div id="user-name" class="field">
+                                        <label class="label">User Name</label>
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input" type="text" placeholder="myUser9999" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                            <span class="icon is-small is-right">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div id="email" class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input" type="email" placeholder="Email" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="icon is-small is-right">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Password -->
+                                    <div id="password" class="field">
+                                        <label class="label">Password</label>
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="password" placeholder="Password" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Password Repeat -->
+                                    <div id="password-repeat" class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="password" placeholder="Repeat Password" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Two Factor -->
+                                    <div id="two-factor" class="field">
+                                        <label class="label">Two Factor Code</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="Authentication Code" />
+                                        </div>
+                                        <p class="help is-danger">Invalid code</p>
+                                    </div>
+
+                                    <div class="p-4"></div>
+
+                                    <!-- Submit -->
+                                    <div class="control is-flex is-justify-content-center">
+                                        <button id="submit-button" type="button" class="button is-primary">
+                                            Register
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </card>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

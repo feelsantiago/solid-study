@@ -1,0 +1,15 @@
+@import './node_modules/bulma/bulma.sass';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    min-width: 450px;
+}
+
+form {
+    margin: 20px;
+}
